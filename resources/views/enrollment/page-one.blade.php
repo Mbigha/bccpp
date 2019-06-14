@@ -72,6 +72,13 @@
 		                        		</div>
 		                        	</div>
 		                        </fieldset>
+					
+					<div class="form-group">
+		                        	<label>BCCPP ID:</label>
+		                            <input class="form-control" type="text" name="bccpp_id" value="{{ ( !empty( $application ) ? $application->bccpp_id : old('bccpp_id') ) }}">
+
+		                            <label class="text-warning">{{ $errors->first('bccpp_id') }}</label>
+		                        </div>
 
 		                        <fieldset>
 		                        	<legend>Vital Signs:</legend>
